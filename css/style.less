@@ -1,11 +1,6 @@
-
-
 // Core variables and mixins
 @import "../lib/twitter-bootstrap/less/variables.less"; // Modify this for custom colors, font-sizes, etc
 @import "../lib/twitter-bootstrap/less/mixins.less";
-
-@iconSpritePath:          "../lib/twitter-bootstrap/img/glyphicons-halflings.png";
-@iconWhiteSpritePath:     "../lib/twitter-bootstrap/img/glyphicons-halflings-white.png";
 
 // Grid system and page structure
 @import "../lib/twitter-bootstrap/less/grid.less";
@@ -27,7 +22,13 @@
 // Utility classes
 @import "../lib/twitter-bootstrap/less/utilities.less"; // Has to be last to override when necessary
 
+// 
 // Overrides & Additions
+// 
+
+@iconSpritePath:          "../lib/twitter-bootstrap/img/glyphicons-halflings.png";
+@iconWhiteSpritePath:     "../lib/twitter-bootstrap/img/glyphicons-halflings-white.png";
+
 body {
 	padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
 }
@@ -36,7 +37,7 @@ body {
 	form {
 		margin: 0;
 	}
-	.container {
+	.wrap {
 		position: relative;
 	}
 	.input-append {
@@ -45,6 +46,13 @@ body {
 	.post-new-link {
 		position: absolute;
 		top: 0;
-		right: 0;
+		right: 20px; /* equals padding on .wrap */
 	}
+}
+
+.wrap {
+	margin: 0 auto;
+	max-width: 900px;
+	min-width: 600px;
+	padding: 0 20px;
 }

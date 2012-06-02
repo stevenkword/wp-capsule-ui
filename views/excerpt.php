@@ -25,8 +25,8 @@ else {
 <?php
 echo $tags;
 ?>
-		<a href="<?php echo esc_url(admin_url('post.php?post='.$post->ID.'&action=edit')); ?>" class="post-edit-link"><?php _e('Edit', 'capsule'); ?></a>
+		<a href="<?php echo esc_url(admin_url('post.php?post='.$post->ID.'&action=edit')); ?>" class="post-edit-link"><i class="icon-pencil"></i></a>
 	</header>
 	<div class="content"><?php the_excerpt(); ?></div>
-	<a href="<?php echo esc_url(admin_url('post.php?post='.$post->ID.'&action=trash')); ?>" class="post-delete-link"><?php _e('Delete', 'capsule'); ?></a>
+	<a href="<?php echo esc_url(admin_url('post.php?post='.$post->ID.'&action=trash')); ?>" class="post-delete-link"><i class="icon-trash"></i></a>
 </article>

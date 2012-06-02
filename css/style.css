@@ -2208,7 +2208,7 @@ body {
 #header form {
   margin: 0;
 }
-#header .container {
+#header .wrap {
   position: relative;
 }
 #header .input-append {
@@ -2217,5 +2217,13 @@ body {
 #header .post-new-link {
   position: absolute;
   top: 0;
-  right: 0;
+  right: 20px;
+  /* equals padding on .wrap */
+
+}
+.wrap {
+  margin: 0 auto;
+  max-width: 900px;
+  min-width: 600px;
+  padding: 0 20px;
 }

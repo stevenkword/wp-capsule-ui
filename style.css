@@ -79,12 +79,6 @@ body {
 	margin: 0;
 	padding: 0;
 }
-#wrap {
-	margin: 0 auto;
-	max-width: 900px;
-	min-width: 600px;
-	padding: 0 20px;
-}
 #footer {
 	color: #999;
 	font-size: 11px;
@@ -100,9 +94,6 @@ body {
 .page-title em {
 	font-style: normal;
 	font-weight: bold;
-}
-.body .pagination {
-	display: block;
 }
 .pagination .nav-previous {
 	float: right;
@@ -258,7 +249,7 @@ article.excerpt a.post-delete-link:visited {
 	color: #900;
 	font-size: 12px;
 	position: absolute;
-	right: 10px;
+	right: 12px;
 	visibility: hidden;
 }
 article.excerpt:hover a.post-delete-link,

@@ -54,7 +54,7 @@ wp_head();
 
 <header id="header" class="navbar navbar-fixed-top">
 	<div class="navbar-inner">
-		<div class="container">
+		<div class="wrap">
 			<form class="navbar-form navbar-search" action="<?php echo esc_url(home_url('/')); ?>" method="get" onsubmit="<?php echo $search_onsubmit; ?>">
 				<input type="text" name="s" value="" placeholder="<?php _e('Search', 'capsule'); ?>" class="search-query span-4"/>
 				<input type="submit" name="search_submit" value="<?php _e('Search', 'capsule'); ?>"class="invisible"/>
@@ -64,7 +64,7 @@ wp_head();
 	</div>
 </header>
 
-<div id="wrap">
+<div class="wrap">
 	<div class="body">
 <?php
 
