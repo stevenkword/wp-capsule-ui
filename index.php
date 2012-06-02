@@ -45,19 +45,22 @@ else {
 	<meta name="viewport" content="width=device-width" />
 	<title><?php wp_title( '|', true, 'right' ); echo esc_html( get_bloginfo('name'), 1 ).$title_description; ?></title>
 	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('stylesheet_url'); ?>" />
+	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('template_directory'); ?>/css/style.css" />
 <?php
 wp_head();
 ?>
 </head>
 <body>
 
-<header id="header">
-	<div class="inner">
-		<form class="clearfix" action="<?php echo esc_url(home_url('/')); ?>" method="get" onsubmit="<?php echo $search_onsubmit; ?>">
-			<input type="text" name="s" value="" placeholder="<?php _e('Search', 'capsule'); ?>" />
-			<input type="submit" name="search_submit" value="<?php _e('Search', 'capsule'); ?>" />
-			<a href="<?php echo esc_url(admin_url('post-new.php')); ?>" class="post-new-link"><?php _e('New', 'capsule'); ?></a>
-		</form>
+<header id="header" class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+			<form class="navbar-form navbar-search" action="<?php echo esc_url(home_url('/')); ?>" method="get" onsubmit="<?php echo $search_onsubmit; ?>">
+				<input type="text" name="s" value="" placeholder="<?php _e('Search', 'capsule'); ?>" class="search-query span-4"/>
+				<input type="submit" name="search_submit" value="<?php _e('Search', 'capsule'); ?>"class="invisible"/>
+			</form>
+			<a href="<?php echo esc_url(admin_url('post-new.php')); ?>" class="btn btn-inverse post-new-link"><i class="icon-plus icon-white"></i></a>			
+		</div>
 	</div>
 </header>
 

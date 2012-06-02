@@ -1,0 +1,50 @@
+
+
+// Core variables and mixins
+@import "../lib/twitter-bootstrap/less/variables.less"; // Modify this for custom colors, font-sizes, etc
+@import "../lib/twitter-bootstrap/less/mixins.less";
+
+@iconSpritePath:          "../lib/twitter-bootstrap/img/glyphicons-halflings.png";
+@iconWhiteSpritePath:     "../lib/twitter-bootstrap/img/glyphicons-halflings-white.png";
+
+// Grid system and page structure
+@import "../lib/twitter-bootstrap/less/grid.less";
+@import "../lib/twitter-bootstrap/less/layouts.less";
+
+// Base CSS
+@import "../lib/twitter-bootstrap/less/forms.less";
+
+// Components: common
+@import "../lib/twitter-bootstrap/less/sprites.less";
+
+// Components: Buttons & Alerts
+@import "../lib/twitter-bootstrap/less/buttons.less";
+@import "../lib/twitter-bootstrap/less/button-groups.less";
+
+// Components: Nav
+@import "../lib/twitter-bootstrap/less/navbar.less";
+
+// Utility classes
+@import "../lib/twitter-bootstrap/less/utilities.less"; // Has to be last to override when necessary
+
+// Overrides & Additions
+body {
+	padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+}
+
+#header {
+	form {
+		margin: 0;
+	}
+	.container {
+		position: relative;
+	}
+	.input-append {
+		margin: 0;
+	}
+	.post-new-link {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+}
