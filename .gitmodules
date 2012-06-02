@@ -19,3 +19,6 @@
 [submodule "lib/jquery-scrollintoview"]
 	path = lib/jquery-scrollintoview
 	url = git@github.com:crowdfavorite/jquery-scrollintoview.git
+[submodule "lib/twitter-bootstrap"]
+	path = lib/twitter-bootstrap
+	url = https://github.com/twitter/bootstrap.git
