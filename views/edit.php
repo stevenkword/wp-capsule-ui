@@ -3,8 +3,8 @@
 		<a href="<?php echo get_permalink($post->ID); ?>" class="post-link"><?php echo get_the_time('', $post); ?></a>
 		<span class="post-dirty">&#9733;</span>
 		<span class="post-last-saved">&nbsp;</span>
-		<a href="#" class="post-close-link"><?php _e('Close', 'capsule'); ?></a>
-		<a href="#" class="post-save-link"><?php _e('Save', 'capsule'); ?></a>
+		<a href="#" class="post-close-link"><i class="icon-remove icon-white"></i></a>
+		<a href="#" class="post-save-link"><i class="icon-ok icon-white"></i></a>
 		<img src="<?php echo esc_url(admin_url('images/wpspin_dark.gif')); ?>" class="save-indicator" />
 	</header>
 	<div id="ace-editor-<?php echo $post->ID; ?>" class="ace-editor"></div>

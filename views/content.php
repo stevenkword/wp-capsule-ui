@@ -1,7 +1,7 @@
 <article id="post-content-<?php the_ID(); ?>" data-post-id="<?php the_ID(); ?>" <?php post_class('content clearfix'); ?>>
 	<header>
 		<a href="<?php the_permalink(); ?>" class="post-link"><?php the_time(); ?></a>
-		<?php edit_post_link(__('Edit', 'capsule'), '', ''); ?>
+		<?php edit_post_link(__('<i class="icon-edit icon-white"></i>', 'capsule'), '', ''); ?>
 	</header>
 	<div class="meta">
 		<h3><?php _e('Projects', 'capsule'); ?></h3>
