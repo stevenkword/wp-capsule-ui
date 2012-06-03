@@ -65,9 +65,9 @@ article .spinner span {
 article.excerpt,
 article.content,
 article.edit {
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	border-radius: 4px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
 }
 article.content,
 article.edit {
@@ -84,12 +84,12 @@ article.unstyled {
 }
 article header {
 	background: #666;
-	-webkit-border-top-left-radius: 4px;
-	-webkit-border-top-right-radius: 4px;
+	-webkit-border-top-left-radius: 3px;
+	-webkit-border-top-right-radius: 3px;
 	-moz-border-radius-topleft: 4px;
 	-moz-border-radius-topright: 4px;
-	border-top-left-radius: 4px;
-	border-top-right-radius: 4px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
 	color: #fff;
 	padding: 7px 10px 6px;
 }
@@ -185,9 +185,9 @@ article.excerpt:hover a.post-delete-link:visited {
 
 article.deleted {
 	background: #ccc;
-	border-radius: 4px;
-	-moz-border-radius: 4px;
-	-webkit-border-radius: 4px;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
 	color: #666;
 	padding: 10px;
 }
@@ -258,9 +258,9 @@ article .ace-editor {
 	margin-top: 5px;
 	margin-bottom: 5px;
 
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	border-radius: 4px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
 }
 .static_container .ace-tm {
 	position: relative;
@@ -305,9 +305,9 @@ pre.static_code {
 	-moz-transform: translate(0,-2em);
 	-o-transform: translate(0,-2em);
 	-ms-transform: translate(0,-2em);
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	border-radius: 4px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
 }
 
 /* Utility */
