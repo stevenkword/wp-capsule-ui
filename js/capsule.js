@@ -413,7 +413,7 @@
 			}
 			else {
 				$('.body').prepend($article)
-					.prepend('<h2 class="date-title date-' + ymd + '">' + date('F j, Y', timestamp) + '</h2>');
+					.prepend('<h6 class="date-' + ymd + '">' + date('F j, Y', timestamp) + '</h6>');
 			}
 			Capsule.createPost($article);
 			e.preventDefault();

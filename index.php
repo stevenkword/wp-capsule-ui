@@ -77,7 +77,7 @@ if (have_posts()) {
 	while (have_posts()) {
 		the_post();
 		$ymd = get_the_time('Ymd', $post);
-		the_date('F j, Y', '<h2 class="date-title date-'.$ymd.'">', '</h2>');
+		the_date('F j, Y', '<h6 class="date-'.$ymd.'">', '</h6>');
 		if (is_singular()) {
 			include('views/content.php');
 		}
