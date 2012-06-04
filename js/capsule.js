@@ -95,7 +95,7 @@
 						catch (er) {console.log(er); throw(er);}
 					});
 					$article.replaceWith(block);
-					$('#post-content-' + postId).scrollintoview({ offset: 10 });
+					$('#post-content-' + postId).scrollintoview({ offset: 50 });
 				}
 			},
 			'json'
@@ -122,7 +122,7 @@
 	};
 
 	Capsule.centerEditor = function(postId) {
-		$.scrollTo('#post-edit-' + postId, {offset: -10});
+		$.scrollTo('#post-edit-' + postId, {offset: -50});
 	};
 
 	Capsule.loadEditor = function($article, postId) {
@@ -323,7 +323,7 @@
 	Capsule.sizeEditor = function() {
 		$('.ace-editor:not(.resized)').each(function() {
 			$(this).height(
-				($(window).height() - $(this).closest('article').find('header').height() - 40) + 'px'
+				($(window).height() - $(this).closest('article').find('header').height() - 80) + 'px'
 			);
 		});
 	};
