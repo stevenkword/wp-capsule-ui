@@ -64,7 +64,7 @@
 						if (data.substr(-1) === "\n") {
 							data = data.substr(0, data.length - 1);
 						}
-						
+
 						lang = el.attr('class');
 						if (lang) {
 							lang = lang.match(/language-([-_a-z0-9]+)/i);
@@ -96,13 +96,21 @@
 					});
 					$article.replaceWith(block);
 					$('#post-content-' + postId).scrollintoview({ offset: 10 });
+
+					// Do this so that the passed in $article will be updated
+					// to the new article content block it is being replaced with
+
+					// add the new $(block) to the existing article jQuery object
+					$.merge($article, $(block));
+					// splice out the old one so we edit the object in-place
+					$article.splice(0,1);
 				}
 			},
 			'json'
 		);
 	};
 	
-	Capsule.loadExcerpt = function($article, postId) {
+	Capsule.loadExcerpt = function($article, postId ) {
 		$article.addClass('unstyled').children().addClass('transparent').end()
 			.append(Capsule.spinner());
 		Capsule.get(
@@ -115,6 +123,14 @@
 				if (response.html) {
 					$article.replaceWith(response.html);
 					$('#post-content-' + postId).scrollintoview({ offset: 10 });
+
+					// Do this so that the passed in $article will be updated
+					// to the new article content block it is being replaced with
+
+					// add the new $(block) to the existing article jQuery object
+					$.merge($article, $(response.html));
+					// splice out the old one so we edit the object in-place
+					$article.splice(0,1);
 				}
 			},
 			'json'

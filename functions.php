@@ -42,6 +42,13 @@ function capsule_resources() {
 		CAPSULE_URL_VERSION,
 		true
 	);
+	wp_enqueue_script(
+		'capsulekeys',
+		$template_url.'js/capsule.keys.js',
+		array('capsule'),
+		CAPSULE_URL_VERSION,
+		true
+	);
 	wp_localize_script('capsule', 'capsuleL10n', array(
 		'endpointAjax' => home_url('index.php'),
 		'loading' => __('Loading...', 'capsule'),
