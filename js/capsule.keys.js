@@ -14,6 +14,7 @@
 				27 : 'capExit', // escape
 				78 : 'capNew', // n
 				68 : 'capDelete', // d
+				83 : 'capStick', // s
 				85 : 'capUndoDelete' // u
 			},
 			actions: {
@@ -87,6 +88,12 @@
 				capNew: function() {
 					if (!$(document.activeElement).is('body')) { return; }
 					$('#header').find('.post-new-link').click();
+				},
+				capStick: function() {
+					if (!$(document.activeElement).is('body')) { return; }
+					if ($currentArticle.length) {
+						$currentArticle.find('.post-stick-link').click();
+					}
 				},
 				capDelete: function() {
 					if (!$(document.activeElement).is('body')) { return; }
