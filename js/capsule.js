@@ -434,7 +434,7 @@
 	}
 	
 	Capsule.extractCodeLanguages = function(content) {
-		var block = new RegExp("^```[a-zA-Z]+\\s*$", "gm"),
+		var block =  RegExp("`[a-zA-Z]+\\s*", "gm"), //new RegExp("^```[a-zA-Z]+\\s*$", "gm"),
 			tag = new RegExp("[a-zA-Z]+", ""),
 			tags = [],
 			matches = content.match(block);
